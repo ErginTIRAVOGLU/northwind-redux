@@ -13,6 +13,7 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
+import CartSummary from "../cart/CartSummary";
 
 export default class Navi extends Component {
   state = { isOpen: false };
@@ -38,17 +39,7 @@ export default class Navi extends Component {
                 GitHub
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu end>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <CartSummary ></CartSummary>
           </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
